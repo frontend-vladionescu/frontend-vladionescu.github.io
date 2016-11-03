@@ -1,0 +1,63 @@
+.about-me-1, .about-me-2, .projects-1, .projects-2, .skills-1, .skills-2, .education-1{
+  position:absolute;
+  top:100px;
+  padding:20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #B6B8BA , white); 
+}
+
+.about-me-1, .about-me-2, .education-1{
+  min-height:500px;
+}
+
+.projects-1, .projects-2, .skills-1, .skills-2{
+   min-height:600px;
+}
+
+@media (max-width: 775px) {
+  .middle-line{
+    display:none;
+  }
+  .navbar{
+    display:none;
+  }
+  .about-me-2, .about-me-1, .projects-1, .projects-2, .skills-1, .skills-2, .education-1{
+    position:relative;
+    margin:0 auto 50px auto;
+    width:90%;
+    left:0;
+  }
+}
+
+@media (min-width: 775px) {
+  .about-me-2, .about-me-1, .projects-1, .projects-2, .skills-1, .skills-2, .education-1{
+    left:-5000px;
+  }
+  .middle-line{
+    display:unset;
+  }
+  .invisible{
+    left:-100%;
+  }
+  .navbar{
+    display:unset;
+  }
+  .visible{
+    position:absolute;
+    width:40%;
+    margin:0;
+    transition: left 0.3s;
+  }
+  .visible-1{
+    left:17%;
+  }
+  .visible-2{
+    left:58%;
+  }
+}
+
+
+
+
+
+

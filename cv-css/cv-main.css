@@ -1,0 +1,21 @@
+body{
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #434343, #000000); 
+  background: linear-gradient(to left, #434343, #000000);    
+  background-image: url("../cv-images/back.jpg");
+  font-family: 'Montserrat', sans-serif;
+  background-position:top center; 
+}
+
+.container{
+  position:relative;
+  width:90%;
+  margin:0 auto;
+  box-sizing: border-box;
+}
+
+.line-separator{
+  height:1px;
+  background:#3F667C;
+  border-bottom:1px solid #3F667C;
+}
