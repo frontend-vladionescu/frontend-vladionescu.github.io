@@ -1,0 +1,5 @@
+.header__cell {
+    width: 100px;
+    border: 1px solid var(--gray);
+    background: var(--primary-background-color);
+}

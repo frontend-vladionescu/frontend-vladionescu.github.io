@@ -1,0 +1,11 @@
+{
+  "name": "notar-server",
+  "version": "1.0.0",
+  "description": "custom server for notar-boca domain",
+  "main": "app.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "author": "Vlad Ionescu <frontend.vlad.ionescu@gmail.com>",
+  "license": "ISC"
+}

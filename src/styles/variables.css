@@ -1,0 +1,27 @@
+/*@value font-sm: 12px;*/
+/*@value font-md: 14px;*/
+/*@value font-lg: 18px;*/
+/*@value font-xl: 24px;*/
+
+/*@value sans-serif-font: 'Roboto', sans-serif;*/
+/*@value serif-font: 'Josefin Sans', sans-serif;*/
+/*@value cursive-font: 'Great Vibes', cursive;*/
+/*@value paragraph-font: 'Poppins', sans-serif;*/
+
+/*@value _bold: 500;*/
+/*@value _bolder: 600;*/
+/*@value _boldest: 900;*/
+
+
+
+/*@value _bold: 500;*/
+/*@value _bolder: 600;*/
+/*@value _boldest: 900;*/
+
+/*@value _primary: rgb(1, 44, 69);*/
+/*@value _secondary: rgb(2, 133, 206);*/
+
+
+:root {
+    --primary-color: rgb(1, 44, 69);
+}
