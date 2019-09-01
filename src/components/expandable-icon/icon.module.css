@@ -1,0 +1,51 @@
+.icon__container {
+    position: absolute;
+    top: 45px;
+    left: 135px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    z-index: 10000000000000000;
+}
+
+.inner {
+    background: rgb(9, 201, 153);
+    padding: 25px 20px 39px;
+    border-radius: 10px;
+    width: 400px;
+    clip-path: circle(6% at 91% 17%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.inner:hover {
+    clip-path: circle(75%);
+    background: #00B6FF;
+}
+
+.inner h6 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.inner p {
+    color: white;
+    font-size: .8rem;
+    padding: 5px;
+}
+
+.inner span {
+    float: right;
+    color: white;
+    font-weight: bold;
+    transition: color .5s;
+    margin-right: 4%;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.inner:hover span {
+    color: rgba(255, 255, 255, 0);
+}
+

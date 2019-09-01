@@ -1,15 +1,15 @@
 import React from 'react';
 
-import styles from './teamcard.module.css';
+import styles from './employee-card-small.module.css';
 
-const TeamCard = ({name, title, imageName}) => {
+const EmployeeCardSmall = ({name, title, description}) => {
     return (
         <div className={styles.card}>
-            <div className={styles.image} style={{backgroundImage: `url("assets/${imageName}")`}}></div>
             <h3>{name}</h3>
-            <p>{title}</p>
+            <h4>{title}</h4>
+            <p>{description}</p>
         </div>
     )
 };
 
-export default TeamCard;
+export default EmployeeCardSmall;

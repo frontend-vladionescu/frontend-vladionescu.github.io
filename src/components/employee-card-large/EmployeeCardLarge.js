@@ -1,11 +1,11 @@
 import React from 'react';
 
-import styles from './ownercard.module.css';
+import styles from './employee-card-largel.module.css';
 
-const OwnerCard = ({name, title, paragraphs, imageName}) => {
+const EmployeeCardLarge = ({name, title, paragraphs, imageName, reversed}) => {
     return (
-        <article className={styles.container}>
-            <div className={styles.image} style={{backgroundImage: `url("assets/${imageName}")`}}></div>
+        <article className={styles.container} style={{flexDirection: reversed ? 'row-reverse' : 'unset'}}>
+            <div className={styles.image} style={{backgroundImage: `url("assets/${imageName}")`}} />
             <div className={styles.description}>
                 <h1>{name}</h1>
                 <h2>{title}</h2>
@@ -15,4 +15,4 @@ const OwnerCard = ({name, title, paragraphs, imageName}) => {
     )
 };
 
-export default OwnerCard;
+export default EmployeeCardLarge;

@@ -1,14 +1,14 @@
 .container {
     margin-top: 60px;
     display: flex;
-    flex-direction: row-reverse;
     min-height: calc(100vh - 120px);
+    background-color: white;
 }
 
 .description {
     box-sizing: border-box;
     padding: 100px;
-    flex: 1;
+    width: 40%;
     background-color: var(--secondary-backgorund-color);
     color: white;
     display: flex;
@@ -18,8 +18,12 @@
 
 .image {
     flex: 1;
-    background-size: cover;
-    min-height: 400px;
+    width: 60%;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    min-height: 600px;
 }
 
 .description h1 {
@@ -47,8 +51,24 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 850px) {
+    .image, .description {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .container {
         display: block;
+    }
+
+    .image, .description {
+        width: 100%;
+    }
+
+    .image {
+        background-size: 100%;
+        background-position: center;
+        min-height: 500px;
     }
 }

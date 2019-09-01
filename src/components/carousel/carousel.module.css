@@ -1,0 +1,24 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navigation i {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.navigation i:first-child, .navigation i:last-child {
+    font-size: 24px;
+    padding:0 10px;
+}
+
+.navigation i.far {
+    font-size: 10px;
+}
+
+.navigation i:not(:first-child):not(:last-child) {
+    padding: 5px;
+}

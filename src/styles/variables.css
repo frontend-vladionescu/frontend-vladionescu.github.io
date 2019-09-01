@@ -23,5 +23,14 @@
 
 
 :root {
-    --primary-color: rgb(1, 44, 69);
+    --primary-color: rgb(16, 40, 77);
+    --secondary-color: rgb(2, 133, 206);
+    --primary-background-color: rgb(249, 250, 250);
+    --secondary-backgorund-color: rgb(16, 40, 77);
+    --title-font: 'Lato', sans-serif;
+    --sans-serif-font: 'Raleway', sans-serif;
+    --serif-font: 'Crimson Text', serif;
+    --cursive-font: 'Great Vibes', cursive;
+    --paragraph-font: 'Poppins', sans-serif;
+    --gray: rgb(240, 241, 242);
 }

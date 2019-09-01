@@ -1,5 +1,157 @@
+.container {
+    height: 100%;
+    /*width: 800px;*/
+    display: flex;
+    justify-content: center;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.header__cell, .side__header__cell {
+    color: black;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+}
+
 .header__cell {
-    width: 100px;
-    border: 1px solid var(--gray);
-    background: var(--primary-background-color);
+    border-left: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__cell span:first-child {
+    font-size: 12px;
+}
+
+.header__cell span:last-child {
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+.header__cell span:first-child.selected {
+    color: var(--secondary-color);
+}
+.header__cell span:last-child.selected {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.header__cell > span:first-child {
+    text-transform: uppercase;
+}
+
+.side__header__cell {
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid darkgray;
+}
+
+.busy {
+    background: red!important;
+}
+
+.cell, .side__cell {
+    height: 50px;
+    box-sizing: border-box;
+    width: 200px;
+    color: black;
+    text-align: center;
+    background: white;
+}
+
+.side__cell {
+    padding: 20px 7px;
+
+}
+
+.booked{
+    background-color: red;
+    height: 100%;
+    border-left: 3px solid var(--secondary-color);
+    cursor: default;
+}
+
+.pending {
+    background-color: yellow;
+}
+
+.cell {
+    cursor: pointer;
+}
+
+.side__cell {
+    width: 70px;
+    border-bottom: 1px solid darkgray;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 10px;
+}
+.cell {
+    border-bottom: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+}
+
+.column:last-child .cell {
+    border-right: 1px solid darkgray;
+}
+
+.side__header__cell i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calendar__modal {
+    display: flex;
+    flex-flow: column;
+}
+
+.calendar__modal--time {
+    text-transform: uppercase;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.calendar__modal label {
+    margin: 20px 0 5px;
+}
+
+.calendar__modal input {
+    height: 30px;
+    padding: 2px 7px;
+}
+
+.calendar__modal textarea {
+    resize: none;
+    padding: 5px;
+
+}
+
+.calendar__modal div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar__modal div button {
+    text-transform: uppercase;
+}
+
+@media screen and ( max-width: 1200px ) {
+    .cell, .header__cell { width: 100px }
+}
+
+@media screen and ( max-width: 650px ) {
+    .cell, .header__cell { width: 80px }
+}
+
+@media screen and ( max-width: 500px ) {
+   .side__header__cell, .side__cell, .cell, .header__cell { width: 50px }
 }
